@@ -1,4 +1,4 @@
-define(['jquery','utils','http','md5'],function($,utils,http,md5){
+define(['#jQuery','$$Utils','$$Http','$$MD5'],function($,utils,http,md5){
     var defaultOptions = {
         url : "",                                                               /* 登录地址 */
         md5 : true,                                                             /* 是否对密码进行md5加密*/
