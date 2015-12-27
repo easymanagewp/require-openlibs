@@ -91,5 +91,20 @@ define(['#jQuery','$$Utils','$$Http','$$MD5'],function($,utils,http,md5){
        }).go();
     };
 
-    return new Login();
+    return {
+        $Init : function(settings){
+          return new Login().init(settings);
+        },
+        /* 验证用户是否登录 */
+        $ValidateLogin : function(_ValidateUrl){
+            if(!_ValidateUrl){
+              _ValidateUrl = "/login/validate.do";
+            }
+            var _IsLogin = false;
+            http.Get(_ValidateUrl).async(!1).success(function(resp){
+                _IsLogin = true;
+            }).go();
+            return _IsLogin;
+        }
+    };
 })
