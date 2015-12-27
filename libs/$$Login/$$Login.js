@@ -102,7 +102,7 @@ define(['#jQuery','$$Utils','$$Http','$$MD5'],function($,utils,http,md5){
             }
             var _IsLogin = false;
             http.Get(_ValidateUrl).async(!1).success(function(resp){
-                _IsLogin = true;
+                _IsLogin = resp;
             }).go();
             return _IsLogin;
         }
