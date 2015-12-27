@@ -117,6 +117,14 @@ define(function(require,exports,module){
 		}
 		return str;
 	};
+
+	var console = console?console:{
+
+	}
+	var Logger = {};
+	Logger.error = function(msg){
+
+	}
 	
 	exports.getParams = getParams;
 	exports.moneyFormat = moneyFormat;

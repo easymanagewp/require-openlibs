@@ -29,7 +29,7 @@ requirejs.config({
 		'$$MD5' : 'libs/$$MD5',
 
 		/* 业务相关 */
-		'$$Login' : 'libs/$$Login',
+		'$$Login' : 'libs/$$Login/$$Login',
 
 		/* 插件 */
 		'css' : 'libs/$$Css',
