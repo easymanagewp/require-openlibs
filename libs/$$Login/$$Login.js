@@ -18,11 +18,12 @@ define(['#jQuery','$$Utils','$$Http','$$MD5'],function($,utils,http,md5){
 
     Login.prototype.init = function(options){
       var _login = this;
-        this._options = $.extend({},defaultOptions,options);
-        $('form').on('submit',function(){
-          _login.action();
-          return false;
-        })
+      this._options = $.extend({},defaultOptions,options);
+      $('form').on('submit',function(){
+        _login.action();
+        return false;
+      })
+      return this;
     };
 
     Login.prototype.getLoginName = function(){

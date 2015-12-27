@@ -15,7 +15,7 @@
 - 初始化Login对象，绑定表单
 ```
 require(['$$Login','#jQuery'],function($$Login,$jQuery){
-  var _Login = $$Login.init({
+  var _Login = $$Login.$Init({
     url : '/login.do',                            // 登录数据提交地址
     md5 : false,                                  // 是否md5加密
     loginNameKey : 'login_name',                  // 登录用户名的name
@@ -30,7 +30,16 @@ require(['$$Login','#jQuery'],function($$Login,$jQuery){
 });
 ```
 
-## 方法
+## 静态方法，注入之后可直接使用
+- $Init(settings)
+  
+  初始化一个Login对象，并且设置相关属性
+
+- $ValidateLogin(_ValidateUrl)
+
+  验证当前用户是否登录 - ValidateUrl为验证地址，默认值为‘/login/validate.do’，返回值需要为一个json对象;true或者false，true表示已经登录，false表示尚未登录
+
+## Login对象方法,需要$Init之后才可调用
 - init(settings)
   
   初始化Login对象，设置相关属性
