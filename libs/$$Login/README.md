@@ -67,13 +67,13 @@ require(['$$Login','#jQuery'],function($$Login,$jQuery){
 
   初始化表单的时候，使用此设置
   
-  |属性名称|类型|默认值|备注|
-  |:----|:----|:----|:----|:----|
-  |url|string|无|表单登录地址，登录地址接受的参数名称和表单input的name相同|
-  |md5|boolean|true|是否对密码进行md5加密传输|
-  |loginNameKey|string|loginName|用户名input框的name|
-  |validateCodeKey|string|code|验证码的输入框name|
-  |passwordElement|string|:input[type='password']|密码输入框的选择器|
-  |successUrl|string|无|登录成功之后跳转的地址|
-  |validateCode|boolean|true|是否开启验证码，如果不开启的话，将忽略验证码的相关设置，并且不进行验证|
-  |hint|function(msg,element)|utils.alert(msg)|错误提示方法，参数1为错误信息，参数2为错误的元素|
+|属性名称|类型|默认值|备注|
+|:----|:----|:----|:----|:----|
+|url|string|无|表单登录地址，登录地址接受的参数名称和表单input的name相同|
+|md5|boolean|true|是否对密码进行md5加密传输|
+|loginNameKey|string|loginName|用户名input框的name|
+|validateCodeKey|string|code|验证码的输入框name|
+|passwordElement|string|:input[type='password']|密码输入框的选择器|
+|successUrl|string|无|登录成功之后跳转的地址|
+|validateCode|boolean|true|是否开启验证码，如果不开启的话，将忽略验证码的相关设置，并且不进行验证|
+|hint|function(msg,element)|utils.alert(msg)|错误提示方法，参数1为错误信息，参数2为错误的元素|
